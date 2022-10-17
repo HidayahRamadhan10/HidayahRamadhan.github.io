@@ -1,0 +1,21 @@
+.container {
+    grid-template-areas:
+      "html css js"
+      "preview preview preview";
+}
+
+.html {
+  grid-area: html;
+}
+
+.css {
+  grid-area: css;
+}
+
+.js {
+  grid-area: js;
+}
+
+.preview {
+  grid-area: preview;
+}

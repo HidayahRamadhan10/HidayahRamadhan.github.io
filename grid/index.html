@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid</title>
+    <style type="text/css">
+      .container {
+        width: 100%;
+        display: grid;
+      }
+
+      .html {
+        background: red;
+      }
+
+      .css {
+        background: green;
+      }
+
+      .js {
+        background: blue;
+      }
+
+      .preview {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="html">HTML</div>
+      <div class="css">CSS</div>
+      <div class="js">JS</div>
+      <div class="preview">PREVIEW</div>
+    </div>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid</title>
+    <style type="text/css">
+      .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 150px 100px;
+        grid-template-areas:
+        "html css js"
+        "preview preview preview";
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+
+      .html {
+        background: red;
+        grid-area: html;
+      }
+
+      .css {
+        background: green;
+        grid-area: css;
+      }
+
+      .js {
+        background: blue;
+        grid-area: js;
+      }
+
+      .preview {
+        background: yellow;
+        grid-area: preview;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="html">HTML</div>
+      <div class="css">CSS</div>
+      <div class="js">JS</div>
+      <div class="preview">PREVIEW</div>
+    </div>
+  </body>
+</html> 

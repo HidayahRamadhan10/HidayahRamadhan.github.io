@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    p::first-letter {
+      color: #ff0000;
+      font-size: xx-large;
+    }
+    </style>
+  </head>
+  <body>
+ 	 <p>Halo! nama saya Novica.</p>
+  </body>
+</html>
